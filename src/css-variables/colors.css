@@ -1,0 +1,32 @@
+:root{
+    
+    --very-dark-blue: hsl(207, 26%, 17%); /* Dark Mode Background */
+    --very-light-gray : hsl(0, 0%, 98%) ; /* Light Mode Background */
+
+    --text-dark-blue : hsl(200, 15%, 8%) ; /*Light Mode Text*/
+    --dark-gray: hsl(0, 0%, 52%); /* Light Mode Input */
+    --dark-blue : hsl(209, 23%, 22%) ; /* Dark Mode Elements */
+
+}
+
+
+/* .text-custom-bg-light{
+    color: var(--text-dark-blue) !important;
+}
+
+
+
+.bg-custom-blue{
+    background-color: var(--dark-blue) !important;
+}
+.bg-custom-gray{
+   background-color: var(--dark-gray) !important; 
+} */
+
+
+.bg-custom-light{
+    background-color: var(--very-light-gray) !important;
+}
+.bg-custom-dark{
+    background-color: var(--very-dark-blue) !important;
+}
