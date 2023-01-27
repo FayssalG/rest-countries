@@ -9,6 +9,17 @@ const Wrapper=styled.div`
 `
 
 
+const  StyledHeader = styled.header`
+    background-color:${props=>props.theme.headerBg};
+    color : ${props=>props.theme.text};
+    span{
+        cursor:pointer;
+        user-select:none;
+    }
+`
+
+
+
 const Form = styled.form`
     background-color: ${props=>props.theme.elementBg};
     color: ${props=>props.theme.text};
@@ -24,7 +35,7 @@ const StyledLink = styled(Link)`
     background-color: ${props=>props.theme.elementBg};
     color: ${props=>props.theme.text};
     
-    @media (min-width : 900px){
+    @media (min-width : 992px){
       img{
         object-fit: cover;
         height: 150px;
@@ -50,6 +61,7 @@ const Section = styled.section`
 
 //Themes
 const Darktheme={
+  value:'dark',
   headerBg : 'var(--dark-blue)',
   bg : 'var(--very-dark-blue)',
   text : 'white',
@@ -57,6 +69,7 @@ const Darktheme={
 }
 
 const LighTheme={
+  value:'light',
   headerBg : 'white',
   text : 'var(--very-dark-blue)',
   bg : 'var(--very-light-gray)',
@@ -64,4 +77,4 @@ const LighTheme={
 }
 
 
-export {LighTheme , Darktheme , Wrapper  ,Form  ,Select, Section ,StyledLink, }
+export {LighTheme , Darktheme , Wrapper  ,Form  ,Select, Section ,StyledLink, StyledHeader}
