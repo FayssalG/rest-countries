@@ -45,7 +45,7 @@ export default function CountriesList(){
     if (state.status === 'pending' || state.status === 'idle') return <h1 className="text-center my-5">Loading...</h1>
 
     // Filtering Data then searching the Filtered array 
-    let filtered = filter ==='all' ? state.data : state.data.filter((c)=>c.continents.includes(filter))
+    let filtered = filter ==='all' ? state.data : state.data.filter((c)=>c.region.toLowerCase()===filter)
     let searched = filtered.filter((c)=>{
         return (search.test(c.name.common.toLowerCase()) || search.test(c.cca3.toLowerCase()) ) 
         
@@ -68,9 +68,11 @@ export default function CountriesList(){
                     <div className="">
                         <Select onChange={handleFilter}  className="form-select  border-0  " name="" >
                             <option value="all">All</option>
-                            <option value="Europe">Europe</option>
-                            <option value='Asia'>Asia</option>
-                            <option value="Africa">Africa</option>
+                            <option value="europe">Europe</option>
+                            <option value='asia'>Asia</option>
+                            <option value="africa">Africa</option>
+                            <option value="americas">Americas</option>
+                            <option value="oceania">Oceania</option>
                         </Select>
                     </div>        
                 </div>
