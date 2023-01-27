@@ -92,6 +92,9 @@ Error generating stack: `+o.message+`
     input{
       color: inherit !important;
     }
+    svg{
+        stroke : ${e=>e.theme.text} !important;
+    }
 `,Ho=qn(gv)`
     background-color: ${e=>e.theme.elementBg};
     color: ${e=>e.theme.text};
@@ -104,7 +107,7 @@ Error generating stack: `+o.message+`
     }
     
     svg{
-        stroke : ${e=>e.theme.text}
+        stroke : ${e=>e.theme.text} !important;
     }
 
 `,E0=qn.select`

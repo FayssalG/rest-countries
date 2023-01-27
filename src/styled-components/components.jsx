@@ -15,6 +15,9 @@ const Form = styled.form`
     input{
       color: inherit !important;
     }
+    svg{
+        stroke : ${props=>props.theme.text} !important;
+    }
 `
 
 const StyledLink = styled(Link)`
@@ -29,7 +32,7 @@ const StyledLink = styled(Link)`
     }
     
     svg{
-        stroke : ${props=>props.theme.text}
+        stroke : ${props=>props.theme.text} !important;
     }
 
 `
