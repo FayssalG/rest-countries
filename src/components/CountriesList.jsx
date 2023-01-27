@@ -59,14 +59,14 @@ export default function CountriesList(){
                 <div className="d-flex flex-column flex-sm-row gap-3 justify-content-between ">
                     <div className="">
                         <Form onSubmit={handleSearch} className="input-group rounded">
-                            <button  className="input-group-text  border-0 bg-transparent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg> </button>
+                            <button role='search' type="submit"  className="input-group-text  border-0 bg-transparent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg> </button>
                             <input ref={SearchRef} className="form-control border-0 bg-transparent" placeholder="Search..." type="text" />
                         </Form>
                     </div>
                     
 
                     <div className="">
-                        <Select onChange={handleFilter}  className="form-select  border-0  " name="" >
+                        <Select name='filter by region' onChange={handleFilter}  className="form-select  border-0  "  >
                             <option value="all">All</option>
                             <option value="europe">Europe</option>
                             <option value='asia'>Asia</option>
