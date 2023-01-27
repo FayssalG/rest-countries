@@ -62,7 +62,7 @@ export default function CountryDetails(){
     const borders = country.borders
    
     return(
-        <Section className="container">
+        <Section className="container pb-4">
                 
                 <div className="d-flex  text-center">
                     <StyledLink to='/' className=" nav-link  my-4 px-3 py-2 rounded">

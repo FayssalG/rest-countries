@@ -12,6 +12,9 @@ const Wrapper=styled.div`
 const Form = styled.form`
     background-color: ${props=>props.theme.elementBg};
     color: ${props=>props.theme.text};
+    input{
+      color: inherit !important;
+    }
 `
 
 const StyledLink = styled(Link)`

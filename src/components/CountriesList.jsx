@@ -24,7 +24,7 @@ export default function CountriesList(){
         e.preventDefault()
         let regEx
         if (SearchRef.current.value.trim() === '') regEx = / */ 
-        else regEx = new RegExp(SearchRef.current.value.trim() , 'g')
+        else regEx = new RegExp(SearchRef.current.value.toLowerCase().trim() , 'g')
         setSearch(regEx)
     }
 
